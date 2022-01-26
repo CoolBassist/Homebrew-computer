@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>1</version>
+  <attributes>
+    <entry>
+      <string>shapeType</string>
+      <shapeType>LAYOUT</shapeType>
+    </entry>
+    <entry>
+      <string>Height</string>
+      <int>6</int>
+    </entry>
+    <entry>
+      <string>Width</string>
+      <int>6</int>
+    </entry>
+  </attributes>
+  <visualElements>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>8</int>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>e0,30,e0,31,41,52,60,32,40,21,70,30,d4,42,80,90</data>
+        </entry>
+      </elementAttributes>
+      <pos x="740" y="240"/>
+    </visualElement>
+    <visualElement>
+      <elementName>RAMDualPort</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>8</int>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
+        </entry>
+      </elementAttributes>
+      <pos x="740" y="400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>CLK</string>
+        </entry>
+      </elementAttributes>
+      <pos x="440" y="460"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="3"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>From_mar</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
+        </entry>
+      </elementAttributes>
+      <pos x="640" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>W_out</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1200" y="280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>W_in</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
+        </entry>
+        <entry>
+          <string>isHighZ</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>avoidActiveLow</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="1200" y="440"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Multiplexer</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
+        </entry>
+      </elementAttributes>
+      <pos x="960" y="260"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>S_mem</string>
+        </entry>
+      </elementAttributes>
+      <pos x="440" y="280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes/>
+      <pos x="720" y="280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>L_RAM</string>
+        </entry>
+      </elementAttributes>
+      <pos x="440" y="380"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>O_mem</string>
+        </entry>
+      </elementAttributes>
+      <pos x="440" y="340"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Driver</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
+        </entry>
+        <entry>
+          <string>flipSelPos</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="1100" y="280"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="700" y="480"/>
+      <p2 x="740" y="480"/>
+    </wire>
+    <wire>
+      <p1 x="460" y="320"/>
+      <p2 x="600" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="320"/>
+      <p2 x="980" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="720" y="420"/>
+      <p2 x="740" y="420"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="420"/>
+      <p2 x="700" y="420"/>
+    </wire>
+    <wire>
+      <p1 x="800" y="260"/>
+      <p2 x="960" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="720" y="360"/>
+      <p2 x="920" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="440" y="460"/>
+      <p2 x="740" y="460"/>
+    </wire>
+    <wire>
+      <p1 x="840" y="300"/>
+      <p2 x="960" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="640" y="240"/>
+      <p2 x="740" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="640" y="400"/>
+      <p2 x="740" y="400"/>
+    </wire>
+    <wire>
+      <p1 x="440" y="340"/>
+      <p2 x="1100" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="920" y="440"/>
+      <p2 x="1200" y="440"/>
+    </wire>
+    <wire>
+      <p1 x="800" y="440"/>
+      <p2 x="840" y="440"/>
+    </wire>
+    <wire>
+      <p1 x="520" y="440"/>
+      <p2 x="740" y="440"/>
+    </wire>
+    <wire>
+      <p1 x="440" y="280"/>
+      <p2 x="460" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="720" y="280"/>
+      <p2 x="740" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="1000" y="280"/>
+      <p2 x="1080" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="1120" y="280"/>
+      <p2 x="1200" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="440" y="380"/>
+      <p2 x="520" y="380"/>
+    </wire>
+    <wire>
+      <p1 x="640" y="140"/>
+      <p2 x="640" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="640" y="240"/>
+      <p2 x="640" y="400"/>
+    </wire>
+    <wire>
+      <p1 x="720" y="360"/>
+      <p2 x="720" y="420"/>
+    </wire>
+    <wire>
+      <p1 x="980" y="300"/>
+      <p2 x="980" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="920" y="360"/>
+      <p2 x="920" y="440"/>
+    </wire>
+    <wire>
+      <p1 x="840" y="300"/>
+      <p2 x="840" y="440"/>
+    </wire>
+    <wire>
+      <p1 x="520" y="380"/>
+      <p2 x="520" y="440"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="320"/>
+      <p2 x="600" y="420"/>
+    </wire>
+    <wire>
+      <p1 x="700" y="420"/>
+      <p2 x="700" y="480"/>
+    </wire>
+    <wire>
+      <p1 x="460" y="280"/>
+      <p2 x="460" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="1100" y="300"/>
+      <p2 x="1100" y="340"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
